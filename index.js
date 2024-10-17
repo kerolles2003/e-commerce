@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 dotenv.config({ path: path.resolve("./config/.env") })
 // connect to db
 dbConnection()
-// api
+// import bootstrap files
 bootStrap(app, express)
 
 app.listen(port, () => console.log(`app listening on port ${port}!`))

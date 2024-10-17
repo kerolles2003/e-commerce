@@ -11,6 +11,6 @@ export const verifyToken = ({ token, secretkey = process.env.SECRET_KEY }) => {
         return jwt.verify(token, secretkey); // Returns the decoded payload if valid
     } catch (error) {
         // console.error('Token verification failed:', error.message);
-        return { messege: error.messege }
+        return { message: error.message }
     }
 };

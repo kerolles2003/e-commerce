@@ -6,9 +6,9 @@ import { connect } from "mongoose";
 export const dbConnection = () => {
     connect(process.env.DB_URL)
         .then(() => {
-            console.log('DB connected successfully')
+            console.log(' connected to DB successfully')
         })
         .catch((err) => {
-            console.log("Faild to connect DB", err)
+            console.log("Fail to connect DB", err)
         })
 }  

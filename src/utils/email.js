@@ -22,7 +22,7 @@ export const sendEmail = async ({
 
 
       const info = await transporter.sendMail({
-        from: '"E-Commerce ✨" <youssefhossam205@gmail.com>', // sender address
+        from: '"job search app verify" <kerosobhy222@gmail.com>', // sender address
         to, // list of receivers
         subject, // Subject line
         text, // plain text body

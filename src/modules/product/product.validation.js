@@ -1,34 +1,35 @@
+
 import joi from "joi";
-import { generalFields } from "../../middelware/validation.js";
+import { generalFields } from "../../middleware/validation.js";
 
 export const addProductVal = joi.object({
-    name: generalFields.name.required(),
-    description: generalFields.description.required(),
-    stock: generalFields.stock,
-    price: generalFields.price.required(),
-    discount: generalFields.discount,
-    discountType: generalFields.discountTybe,
-    colors: generalFields.colors,
-    sizes: generalFields.sizes,
-    category: generalFields.objectId.required(),
-    subcategory: generalFields.objectId.required(),
-    brand: generalFields.objectId.required()
-})
+  name: generalFields.name.required(),
+  description: generalFields.description.required(),
+  stock: generalFields.stock,
+  price: generalFields.price.required(),
+  discount: generalFields.discount,
+  discountType: generalFields.discountTybe,
+  colors: generalFields.colors,
+  sizes: generalFields.sizes,
+  category: generalFields.objectId.required(),
+  subcategory: generalFields.objectId.required(),
+  brand: generalFields.objectId.required(),
+});
 export const updateProductVal = joi.object({
-    name: generalFields.name,
-    description: generalFields.description,
-    stock: generalFields.stock,
-    price: generalFields.price,
-    discount: generalFields.discount,
-    discountType: generalFields.discountTybe,
-    colors: generalFields.colors,
-    sizes: generalFields.sizes,
-    productId: generalFields.objectId.required(),
-    category: generalFields.objectId,
-    subcategory: generalFields.objectId,
-    brand: generalFields.objectId
-})
+  name: generalFields.name,
+  description: generalFields.description,
+  stock: generalFields.stock,
+  price: generalFields.price,
+  discount: generalFields.discount,
+  discountType: generalFields.discountTybe,
+  colors: generalFields.colors,
+  sizes: generalFields.sizes,
+  productId: generalFields.objectId.required(),
+  category: generalFields.objectId,
+  subcategory: generalFields.objectId,
+  brand: generalFields.objectId,
+});
 
 export const deleteProductVal = joi.object({
-    productId: generalFields.objectId.required()
-})
+  productId: generalFields.objectId.required(),
+});

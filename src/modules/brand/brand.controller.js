@@ -1,7 +1,7 @@
 import slugify from "slugify"
 import { Brand } from "../../../DB/index.js"
 import { APPError } from "../../utils/appError.js"
-import { messages } from "../../utils/constant/messaeges.js"
+import { messages } from "../../utils/constant/messages.js"
 import cloudinary, { deleteCloudImage } from "../../utils/cloud.js"
 
 // add Brand

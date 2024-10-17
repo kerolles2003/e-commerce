@@ -1,14 +1,13 @@
 import joi from "joi";
-import { generalFields } from "../../middelware/validation.js";
-
+import { generalFields } from "../../middleware/validation.js";
 
 export const addReviewVal = joi.object({
-    comment: generalFields.comment.optional(),
-    rate: generalFields.rate.required(),
-    productId: generalFields.objectId.required()
-})
+  comment: generalFields.comment.optional(),
+  rate: generalFields.rate.required(),
+  productId: generalFields.objectId.required(),
+});
 
 export const getReviewsVal = joi.object({
-    productId: generalFields.objectId.required(),
-    size: joi.string().optional()
-})
+  productId: generalFields.objectId.required(),
+  size: joi.string().optional(),
+});
